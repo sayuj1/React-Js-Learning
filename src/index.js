@@ -1,12 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDom from "react-dom";
+// import el from "./App";
+import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// let el = < h1 > Hello World! < /h1>   
+/* react element is created, it is same as 'React.createElement("h1", null, "Hello World!")' */
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// ReactDom.render(el, document.getElementById("root"));
+ReactDom.render(< App />, document.getElementById("root"));
