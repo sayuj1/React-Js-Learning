@@ -13,14 +13,24 @@ import React, { Component, Fragment } from "react";
 
 //App-- > Component  
 
-class App extends Component {
-    render() {
-        return (
-            <Fragment>
-                <h1>Hello World1</h1>
-                <h2>Hellow World2</h2>
-            </Fragment>
-        );
-    }
+// class App extends Component {
+//     render() {
+//         return (
+//             <Fragment>
+//                 <h1>Hello World1</h1>
+//                 <h2>Hellow World2</h2>
+//             </Fragment>
+//         );
+//     }
+// }
+
+// export default App;
+
+// const el = <h1> Hello Sayuj </h1>;
+// export default el;
+
+const Student = (props) => {
+    return <h1>Hello {props.name}</h1>
 }
-export default App;
+
+export default Student;
