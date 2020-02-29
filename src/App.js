@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import Student from "./Student";
 
 // let el = < h1 > Hello World1! < /h1>   
 
@@ -33,10 +34,20 @@ import React, { Component, Fragment } from "react";
 //     return <h1>Hello {props.name}</h1>
 // }
 
-class Student extends Component {
-    render() {
-        return <h1> Hello {this.props.name} </h1>
-    }
+// class Student extends Component {
+//     render() {
+//         return <h1> Hello {this.props.name} </h1>
+//     }
+// }
+
+// export default Student;
+
+const App = () => {
+    return (
+        <Fragment>
+            <Student />
+        </Fragment>
+    )
 }
 
-export default Student;
+export default App;
