@@ -45,7 +45,8 @@ import Student from "./Student";
 const App = () => {
     return (
         <Fragment>
-            <Student />
+            <Student name="sayuj" />
+            <Student name="varun" />
         </Fragment>
     )
 }
