@@ -42,13 +42,24 @@ import Student from "./Student";
 
 // export default Student;
 
-const App = () => {
-    return (
-        <Fragment>
-            <Student name="sayuj" />
-            <Student name="varun" />
-        </Fragment>
-    )
+// const App = () => {
+//     return (
+//         <Fragment>
+//             <Student name="sayuj" />
+//             <Student name="varun" />
+//         </Fragment>
+//     )
+// }
+
+class App extends Component {
+    render() {
+        return (
+            <Fragment>
+                <Student name="Rahul" />
+                <Student name="Ram" />
+            </Fragment>
+        )
+    }
 }
 
 export default App;
