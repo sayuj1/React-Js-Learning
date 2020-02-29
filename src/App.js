@@ -29,8 +29,14 @@ import React, { Component, Fragment } from "react";
 // const el = <h1> Hello Sayuj </h1>;
 // export default el;
 
-const Student = (props) => {
-    return <h1>Hello {props.name}</h1>
+// const Student = (props) => {
+//     return <h1>Hello {props.name}</h1>
+// }
+
+class Student extends Component {
+    render() {
+        return <h1> Hello {this.props.name} </h1>
+    }
 }
 
 export default Student;
