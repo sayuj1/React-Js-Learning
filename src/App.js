@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Student from "./Student";
+// import Student from "./Student";
 
 // let el = < h1 > Hello World1! < /h1>   
 
@@ -51,15 +51,15 @@ import Student from "./Student";
 //     )
 // }
 
-class App extends Component {
-    render() {
-        return (
-            <Fragment>
-                <Student name="Rahul" />
-                <Student name="Ram" />
-            </Fragment>
-        )
-    }
-}
+// class App extends Component {
+//     render() {
+//         return (
+//             <Fragment>
+//                 <Student name="Rahul" />
+//                 <Student name="Ram" />
+//             </Fragment>
+//         )
+//     }
+// }
 
-export default App;
+// export default App;
