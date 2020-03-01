@@ -28,15 +28,18 @@ class Student extends Component {
         roll: this.props.roll
     }
     handleClick = () => {
-        console.log("Button clicked", this);
-        console.log("Your name is ", this.state.name, "Your roll number is ", this.state.roll);
+        // console.log("Button clicked", this);
+        // console.log("Your name is ", this.state.name, "Your roll number is ", this.state.roll);
+        this.setState({ name: "Varun ", roll: "102" });
     }
     render() {
-        return (
-            <div>
-                <h1>Hello event, this is {this.state.name} and my roll is {this.state.roll}</h1>
-                <button onClick={this.handleClick}>click me</button>
-            </div>
+        return ( <
+            div >
+            <
+            h1 > Hello event, this is { this.state.name }
+            and my roll is { this.state.roll } < /h1> <
+            button onClick = { this.handleClick } > click me < /button> < /
+            div >
         )
     }
 }
