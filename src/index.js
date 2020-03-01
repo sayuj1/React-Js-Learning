@@ -21,5 +21,5 @@ import Student from "./Student";
 
 // ReactDom.render(<App />, document.getElementById("root"));
 
-ReactDom.render(<Student name="varun" />, document.getElementById("root"));
+ReactDom.render(<Student name="sayuj" roll="101" />, document.getElementById("root"));
 
