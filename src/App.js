@@ -1,21 +1,34 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, useEffect, Fragment } from 'react';
 
-// making functional app component
+// functional component
+const App = () => {
 
-function App() {
-    const [name, setName] = useState("Sayuj");
-    const [roll, setRoll] = useState(100);
+    const [count, setCount] = useState(0);
+    const [count1, setCount1] = useState(10);
 
-    const handleClick = () => {
-        setName("Varun");
-        setRoll(101);
-    }
+    const handleIncrement = () => {
+        setCount(count + 1);
+    };
+
+    const handleDecrement = () => {
+        if (count1 > 0) {
+            setCount1(count1 - 1);
+        }
+
+    };
+
+    useEffect(() => {
+        console.log("useEffect called");
+    }, [count]);
+
     return (
         <Fragment>
-            <h1>Name: {name}</h1>
-            <h2>Roll: {roll}</h2>
-            <button onClick={handleClick}>Update</button>
+            <h1>Count: {count}</h1>
+            <button type="button" onClick={handleIncrement}>Increase</button>
+            <h1>Count: {count1}</h1>
+            <button type="button" onClick={handleDecrement}>Decrease</button>
         </Fragment>
+
     )
 }
 
