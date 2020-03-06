@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menuContainer {
+    background-color: greenyellow;
+    height: 100px;
+    width: 100%;
+}
+
+.menuContainer ul {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuContainer ul li {
+    font-size: 20px;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
